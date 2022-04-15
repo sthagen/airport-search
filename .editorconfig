@@ -43,7 +43,7 @@ indent_style = space
 indent_size = 2
 
 # JavaScript-specific settings
-[*.{js,ts}]
+[*.{js,ts,vue}]
 quote_type = single
 indent_style = space
 indent_size = 2
