@@ -4,14 +4,14 @@
 </template>
 
 <script>
-import HelloWorld from "./components/hello_world.vue";
+import HelloWorld from './components/hello_world.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     HelloWorld,
   },
-};
+}
 </script>
 
 <style>
