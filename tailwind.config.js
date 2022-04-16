@@ -12,6 +12,9 @@ module.exports = {
         'brand-blue-1': '#1967d2',
         'brand-green-1': '#137333',
       },
+      boxShadow: {
+        green: '0 0 3px 3px #42f485',
+      },
     },
   },
   variants: {
