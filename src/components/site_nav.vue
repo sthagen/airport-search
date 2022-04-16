@@ -3,11 +3,13 @@
     <div class="fixed top-0 left-0 w-full h-16 bg-white">
       <div class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1">
         <a href="/" class="flex items-center h-full text-xl">{{ site }}</a>
-        <ul class="flex items-center h-full">
-          <li v-for="section in sections" :key="section.url" class="flex items-center h-full ml-8">
-            <a :href="section.url">{{ section.name }}</a>
-          </li>
-        </ul>
+        <nav class="h-full ml-12">
+          <ul class="flex h-full p-0 m-0 list-none">
+            <li v-for="section in sections" :key="section.url" class="h-full ml-9">
+              <a :href="section.url" class="flex items-center h-full py-2.5">{{ section.name }}</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
