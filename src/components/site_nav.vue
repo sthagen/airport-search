@@ -5,7 +5,7 @@
         <a href="/" class="flex items-center h-full text-xl">{{ site }}</a>
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
-            <li v-for="section in sections" :key="section.url" class="h-full ml-9">
+            <li v-for="section in sections" :key="section.url" class="h-full ml-9 first:ml-0">
               <a :href="section.url" class="flex items-center h-full py-2.5">{{ section.name }}</a>
             </li>
           </ul>
