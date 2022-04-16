@@ -10,7 +10,7 @@ describe('site-nav', () => {
   describe('sections', () => {
     it('displays the text of all sections to the right', () => {
       const wrapper = mount(SiteNav)
-      expect(wrapper.text()).toMatch(/CountriesRegionsCodes$/)
+      expect(wrapper.text()).toMatch(/CountriesRegionsCodesAction$/)
     })
     it('displays the sectional texts in the correct slots', () => {
       const wrapper = mount(SiteNav)
@@ -32,6 +32,6 @@ describe('site-nav async hacked up (WIP showcase for async tests)', () => {
         { name: 'D', url: 'd' },
       ],
     })
-    expect(wrapper.text()).toMatch(/^ABCD$/)
+    expect(wrapper.text()).toMatch(/^ABCDAction$/)
   })
 })

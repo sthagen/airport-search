@@ -10,14 +10,19 @@
             </li>
           </ul>
         </nav>
+        <div class="flex items-center h-full ml-auto"><action-button /></div>
       </div>
     </div>
   </header>
 </template>
 
 <script>
+import ActionButton from '@/components/action_button.vue'
 export default {
   name: 'SiteNav',
+  components: {
+    ActionButton,
+  },
   data() {
     return {
       site: 'Airport Search',
