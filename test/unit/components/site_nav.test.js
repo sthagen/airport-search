@@ -8,9 +8,15 @@ describe('site-nav', () => {
     expect(wrapper.text()).toMatch(/^Airport Search/)
   })
   describe('sections', () => {
-    it('displays all sections to the right', () => {
+    it('displays the text of all sections to the right', () => {
       const wrapper = mount(SiteNav)
       expect(wrapper.text()).toMatch(/CountriesRegionsCodes$/)
+    })
+    it('displays the sectional texts in the correct slots', () => {
+      const wrapper = mount(SiteNav)
+      const slots = wrapper.findAll('li')
+      const sequence = slots.map((slot) => slot.text())
+      expect(sequence).toEqual(['Countries', 'Regions', 'Codes'])
     })
   })
 })
