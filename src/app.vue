@@ -1,5 +1,5 @@
 <template>
-  <h1>Airport Search</h1>
+  <h1 class="mt-8 text-6xl text-center">Airport Search</h1>
 </template>
 
 <script>
