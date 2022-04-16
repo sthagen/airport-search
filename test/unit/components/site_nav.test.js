@@ -14,7 +14,7 @@ describe('site-nav', () => {
     })
     it('displays the sectional texts in the correct slots', () => {
       const wrapper = mount(SiteNav)
-      const slots = wrapper.findAll('li')
+      const slots = wrapper.findAll('[data-test="site-nav-sect"]')
       const sequence = slots.map((slot) => slot.text())
       expect(sequence).toEqual(['Countries', 'Regions', 'Codes'])
     })
