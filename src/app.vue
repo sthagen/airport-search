@@ -1,9 +1,14 @@
 <template>
-  <h1 class="mt-8 text-6xl text-center">Airport Search</h1>
+  <SiteNav />
 </template>
 
 <script>
+import SiteNav from '@/components/site_nav.vue'
+
 export default {
   name: 'App',
+  components: {
+    SiteNav,
+  },
 }
 </script>
