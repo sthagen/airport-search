@@ -1,5 +1,5 @@
 <template>
-  <SiteNav />
+  <site-nav />
 </template>
 
 <script>
